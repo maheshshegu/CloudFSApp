@@ -1,0 +1,33 @@
+{
+  "xsappname": "CloudFSApp",
+  "tenant-mode": "dedicated",
+  "scopes": [
+    {
+      "name": "$XSAPPNAME.RiskViewer1",
+      "description": "RiskViewer"
+    },
+    {
+      "name": "$XSAPPNAME.RiskManager1",
+      "description": "RiskManager"
+    }
+  ],
+  "attributes": [],
+  "role-templates": [
+    {
+      "name": "RiskViewer1",
+      "description": "generated",
+      "scope-references": [
+        "$XSAPPNAME.RiskViewer1"
+      ],
+      "attribute-references": []
+    },
+    {
+      "name": "RiskManager1",
+      "description": "generated",
+      "scope-references": [
+        "$XSAPPNAME.RiskManager1"
+      ],
+      "attribute-references": []
+    }
+  ]
+}
